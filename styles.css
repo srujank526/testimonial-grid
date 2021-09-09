@@ -1,0 +1,160 @@
+
+body{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+   background-color: rgba(236, 223, 223, 0.733);
+}
+article{
+    text-align: justify;
+    line-height: 1.5;
+}
+
+@media only screen and (min-width: 700px){
+
+.container{
+    display : grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    justify-items: stretch;
+    justify-content: space-around;
+    height:555px;
+    width: 1100px;
+    margin-left: 175px;
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+.grid-item{
+    border: 2px solid whitesmoke;
+    margin: 10px;
+    padding:25px;
+    border-radius: 10px;
+}
+.grid-item1{
+   grid-column-start: 1;
+   grid-column-end: 3;
+   background-color: hsl(263, 55%, 52%);
+   background-image: url(file:///C:/Users/Pramod/Downloads/testimonials-grid-section-main/testimonials-grid-section-main/images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-position-x: 364px;
+    
+}
+.grid-item2{
+    background-color: hsl(217, 19%, 35%);
+}
+.grid-item5{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: white;
+    height: 530px;
+ }
+ .grid-item3{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: white;
+    
+ }
+ .grid-item4{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: hsl(219, 29%, 14%);
+    
+}
+.img1{
+     border-radius: 50%;
+     height:30px;
+     border: 2px solid rgb(188, 131, 235);
+    float: left;
+}
+.img2{
+    border-radius: 50%;
+    height:30px;
+   
+    float: left;
+}
+.display-img{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 12px;
+}
+.name-item{
+    margin-left: 5px;
+    padding-left: 15px;
+    color: beige;
+}
+
+
+}
+@media only screen and (max-width: 700px){
+    .container-sm{
+        display:flex;
+        flex-direction:column;
+        width: 100%;
+    }
+    .grid-item-sm{
+        border: 2px solid whitesmoke;
+        padding:25px;
+        border-radius: 10px;
+        height: fit-content;
+    }
+    .grid-item1-sm{
+        background-color: hsl(263, 55%, 52%);
+        background-image: url(file:///C:/Users/Pramod/Downloads/testimonials-grid-section-main/testimonials-grid-section-main/images/bg-pattern-quotation.svg);
+        background-repeat: no-repeat;
+        background-position: top;
+        margin:60px 10% 10px 25px;
+        
+        background-position-x: 364px;
+    }
+    .grid-item2-sm{
+        background-color: hsl(217, 19%, 35%);
+        margin:10px 10% 10px 25px;
+    }
+    .img1-sm{
+        border-radius: 50%;
+        height:30px;
+        border: 2px solid rgb(188, 131, 235);
+        float: left;
+       
+   }
+   .img2-sm{
+       border-radius: 50%;
+       height:30px;
+     
+      
+       float: left;
+   }
+   .grid-item5-sm{
+    background-color: white;
+    margin:10px 10% 10px 25px;
+ }
+.display-img-sm{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 12px;
+}
+.name-item-sm{
+      margin-left: 5px;
+      padding-left: 15px;
+      color: beige;
+}
+.grid-item3-sm{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: white;
+    margin:10px 10% 10px 25px;
+ }
+ .grid-item4-sm{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: hsl(219, 29%, 14%);
+    margin:10px 10% 10px 25px;
+}
+}
+
